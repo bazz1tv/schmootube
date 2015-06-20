@@ -1,6 +1,6 @@
 #!/bin/bash
 
-### YOUTUBE TOP100 THUMBNAIL DOWNLOADER WITH IMAGE RESIZE
+### Youtube Channel Thumbnail Downloader With Image Resize
 ## written by bazz (http://www.bazz1.com)
 ### written on OSX, should work on any *nix
 
