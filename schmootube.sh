@@ -35,7 +35,8 @@ mkdir -p work
 curl "$URL" > work/Socialblade_YouTube_Stats.html
 
 # convert channel references to Youtube URLs
-cat work/Socialblade_YouTube_Stats.html | grep "/youtube/user/" | sed 's/href = /href=/g' | sed 's#<a href="/youtube\([^"]*\)".*#http://www.youtube.com\1#g' | \
+cat work/Socialblade_YouTube_Stats.html | grep "/youtube/user/" | sed 's/href = /href=/g' | \
+	sed 's#<a href="/youtube\([^"]*\)".*#http://www.youtube.com\1#g' | \
 	sed 's#%c2%a0##g' | sort -u > work/URLS.txt
 # I noticed some urls scraped had a weird code %c2%a0 which I remove above in the last sed
 
