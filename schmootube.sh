@@ -73,7 +73,11 @@ for url in `cat work/URLS.txt`; do
 	if ! test -f img/$user.$extension; then 
 		curl -L "$imgurl" > img/$user.$extension
 	fi
+
 done 
 
 # consider zipping the img directory as a final step
 # zip -r foo.zip img
+
+# consider converting to png
+#convert rose.jpg rose.png
